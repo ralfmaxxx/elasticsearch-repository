@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<ruleset name="Elasticsearch Repository">
+         <description>Coding standardd for Elasticsearch repository</description>
+         <file>src</file>
+         <file>features</file>
+         <rule ref="PSR1"/>
+         <rule ref="PSR2"/>
+</ruleset>

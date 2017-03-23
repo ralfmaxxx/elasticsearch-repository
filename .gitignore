@@ -1,0 +1,4 @@
+bin
+.vagrant
+vendor
+.idea

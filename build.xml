@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Elasticsearch repository" default="all">
+         <property name="package_src_directory" value="src" />
+         <property name="package_features_directory" value="features" />
+
+         <import file="phing/vagrant.xml" />
+         <import file="phing/quality.xml" />
+         <import file="phing/tests.xml" />
+
+         <target name="all" depends="quality,tests" description="runs quality tools and tests"/>
+
+</project>
