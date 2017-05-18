@@ -1,8 +1,8 @@
 <?php
 
-namespace Elasticsearch\Repository\Client\Index\Element\Setting\Common;
+namespace Elasticsearch\Repository\Client\Index\Structure\Element\Setting\Common;
 
-use Elasticsearch\Repository\Client\Index\Element\Setting\SettingInterface;
+use Elasticsearch\Repository\Client\Index\Structure\Element\Setting\SettingInterface;
 
 class ReplicaNumber implements SettingInterface
 {

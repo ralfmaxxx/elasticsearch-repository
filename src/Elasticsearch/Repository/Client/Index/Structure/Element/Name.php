@@ -1,6 +1,6 @@
 <?php
 
-namespace Elasticsearch\Repository\Client\Index\Element;
+namespace Elasticsearch\Repository\Client\Index\Structure\Element;
 
 class Name
 {

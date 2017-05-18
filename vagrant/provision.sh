@@ -9,9 +9,11 @@ PHP_MODULES=(
     'php7.0-cli'
     'php7.0-xml'
     'php7.0-mbstring'
+    'php7.0-curl'
     'php7.1-cli'
     'php7.1-xml'
     'php7.1-mbstring'
+    'php7.1-curl'
 )
 
 add_php_repository &&

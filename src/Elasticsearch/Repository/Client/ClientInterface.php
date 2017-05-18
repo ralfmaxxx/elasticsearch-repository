@@ -2,7 +2,6 @@
 
 namespace Elasticsearch\Repository\Client;
 
-interface ClientInterface
+interface ClientInterface extends IndexActionInterface, QueryBuilderAwareInterface
 {
-    public function createIndex(): array;
 }

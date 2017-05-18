@@ -1,8 +1,8 @@
 <?php
 
-namespace spec\Elasticsearch\Repository\Client;
+namespace spec\Elasticsearch\Repository\Client\Configuration;
 
-use Elasticsearch\Repository\Client\Hosts;
+use Elasticsearch\Repository\Client\Configuration\Hosts;
 use PhpSpec\ObjectBehavior;
 
 /**

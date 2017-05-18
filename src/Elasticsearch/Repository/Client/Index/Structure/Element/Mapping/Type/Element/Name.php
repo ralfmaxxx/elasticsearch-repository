@@ -1,6 +1,6 @@
 <?php
 
-namespace Elasticsearch\Repository\Client\Index\Element\Mapping\Type\Element;
+namespace Elasticsearch\Repository\Client\Index\Structure\Element\Mapping\Type\Element;
 
 class Name
 {

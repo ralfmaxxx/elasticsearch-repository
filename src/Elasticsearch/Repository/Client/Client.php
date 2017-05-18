@@ -2,22 +2,27 @@
 
 namespace Elasticsearch\Repository\Client;
 
-use Elasticsearch\ClientBuilder;
-use Elasticsearch\Repository\Client\Configuration\Hosts;
+use Elasticsearch\Client as ElasticsearchClient;
+use Elasticsearch\Repository\Client\Index\Structure\Index;
 
-class Client implements ClientInterface
+class Client
 {
     private $client;
 
-    public function __construct(Hosts $hostCollection)
-    {
-        $this->client = ClientBuilder::create()
-            ->setHosts($hostCollection->get())
-            ->build();
+    private $queryBuilder;
+
+    public function __construct(
+        ElasticsearchClient $client,
+        QueryBuilderInterface $queryBuilder
+    ) {
+        $this->client = $client;
+        $this->queryBuilder = $queryBuilder;
     }
 
-    public function createIndex(): array
+    public function createIndex(Index $index): array
     {
-        return $this->client->indices()->create();
+        if ($this->queryBuilder->support($index)) {
+            return $this->client->indices()->create($this->queryBuilder->build($index));
+        }
     }
 }

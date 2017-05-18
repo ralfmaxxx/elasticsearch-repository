@@ -1,6 +1,6 @@
 <?php
 
-namespace Elasticsearch\Repository\Client\Index\Element\Setting;
+namespace Elasticsearch\Repository\Client\Index\Structure\Element\Setting;
 
 class Settings
 {

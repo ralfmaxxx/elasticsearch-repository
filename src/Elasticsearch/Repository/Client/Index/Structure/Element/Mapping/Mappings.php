@@ -1,8 +1,8 @@
 <?php
 
-namespace Elasticsearch\Repository\Client\Index\Element\Mapping;
+namespace Elasticsearch\Repository\Client\Index\Structure\Element\Mapping;
 
-use Elasticsearch\Repository\Client\Index\Mapping\Type\Type;
+use Elasticsearch\Repository\Client\Index\Structure\Element\Mapping\Type\Type;
 
 class Mappings
 {

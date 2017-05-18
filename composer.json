@@ -29,6 +29,7 @@
         "squizlabs/php_codesniffer": "^2.8",
         "phpunit/phpunit": "^6.0",
         "mockery/mockery": "^0.9.9",
-        "behat/behat": "^3.3"
+        "behat/behat": "^3.3",
+        "monolog/monolog": "^1.22"
     }
 }
